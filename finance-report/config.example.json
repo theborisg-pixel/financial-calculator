@@ -1,0 +1,30 @@
+{
+  "title": "דוח פיננסי אישי",
+  "dataDir": "data",
+  "monthsBack": 6,
+  "reportMonths": 24,
+  "staleDays": 14,
+  "calculatorProfileName": "מהדוח הפיננסי",
+
+  "sources": [
+    { "id": "hapoalim", "type": "israeli-bank", "company": "hapoalim", "label": "בנק הפועלים" },
+    { "id": "max",      "type": "israeli-bank", "company": "max",      "label": "מקס" },
+    { "id": "isracard", "type": "israeli-bank", "company": "isracard", "label": "ישראכרט", "disabled": true },
+
+    { "id": "ibkr", "type": "ibkr-flex", "label": "Interactive Brokers", "queryId": "PUT-YOUR-FLEX-QUERY-ID-HERE" },
+
+    { "id": "meitav",  "type": "holdings-file", "label": "מיטב טרייד", "assetClass": "stocks", "priceInAgorot": false },
+    { "id": "mislaka", "type": "pension-file",  "label": "מסלקה פנסיונית" },
+
+    { "id": "apartment", "type": "manual", "label": "דירה",    "assetClass": "realEstate", "value": 2500000 },
+    { "id": "car",       "type": "manual", "label": "רכב",     "assetClass": "other",      "value": 90000, "disabled": true },
+    { "id": "mortgage",  "type": "manual", "label": "משכנתא", "liability": true, "value": 950000, "interestRate": 4.5, "monthlyPayment": 5200, "remainingMonths": 240 }
+  ],
+
+  "categories": {
+    "חוגים": ["קונסרבטוריון", "מתנ\"ס"],
+    "חיות מחמד": ["וטרינר", "פט שופ", "zoo"]
+  },
+
+  "fxRates": { "USD": 3.70, "EUR": 4.00 }
+}

@@ -1,0 +1,6 @@
+node_modules/
+# Personal data — never commit
+config.json
+data/
+data-demo/
+*.enc

@@ -1,0 +1,25 @@
+{
+  "name": "finance-report",
+  "version": "1.0.0",
+  "description": "Personal finance report: Israeli banks, credit cards, brokers (IBKR, Israeli brokers) and pension funds",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node bin/finreport.js demo",
+    "fetch": "node bin/finreport.js fetch",
+    "report": "node bin/finreport.js report"
+  },
+  "type": "module",
+  "optionalDependencies": {
+    "israeli-bank-scrapers": "^6.13.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "private": true,
+  "bin": {
+    "finreport": "bin/finreport.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
